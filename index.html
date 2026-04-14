@@ -40,7 +40,7 @@
  return;
  }
  document.getElementById("ausgabe").innerHTML = "Tipp gespeichert!";
- //await laden();
+ await laden();
  }
  async function laden() {
  const { data, error } = await supabase
@@ -64,7 +64,7 @@
  }
  window.speichern = speichern;
  window.laden = laden;
- //laden();
+ laden();
  </script>
 </body>
 </html>
